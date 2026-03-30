@@ -370,6 +370,13 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 20px;
+        }
+
+        .person-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             gap: 10px;
         }
 
@@ -390,8 +397,8 @@
             font-family: 'Cormorant Garamond', serif;
             font-size: 0.9rem;
             color: var(--maroon-light);
-            margin-top: 15px;
             line-height: 1.6;
+            margin: 0;
         }
 
         /* Date Section */
@@ -461,6 +468,31 @@
         /* Location Section */
         .location-section {
             padding-bottom: 20px;
+        }
+
+        .map-container {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .location-map {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(107, 26, 47, 0.1);
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .location-grid {
+                grid-template-columns: 1fr 1fr;
+            }
         }
 
         .location-item {
@@ -710,9 +742,9 @@
             <p class="invitation-text">Invitation</p>
 
             <div class="couple-names-cover">
-                <span class="name-cover">Priya</span>
+                <span class="name-cover">Chansithan</span>
                 <span class="ampersand">&</span>
-                <span class="name-cover">Rahul</span>
+                <span class="name-cover">Tharaha</span>
             </div>
 
             <div class="seal-container">
@@ -748,22 +780,27 @@
             <section class="section couple-section">
                 <p class="section-title">The Couple</p>
                 <div class="couple-names">
-                    <span class="bride-name">Priya Sharma</span>
+                    <div class="person-info">
+                        <span class="bride-name">Chansithan</span>
+                        <p class="family-names">
+                            Son of Mr. & Mrs. Balasubramanyam Gowryrathnam
+                        </p>
+                    </div>
                     <span class="couple-ampersand">&</span>
-                    <span class="groom-name">Rahul Verma</span>
+                    <div class="person-info">
+                        <span class="groom-name">Tharaha</span>
+                        <p class="family-names">
+                            Daughter of Mr. & Mrs. Nadarasalingam Ananthasothy
+                        </p>
+                    </div>
                 </div>
-                <p class="family-names">
-                    Daughter of Mr. & Mrs. Sharma<br>
-                    &<br>
-                    Son of Mr. & Mrs. Verma
-                </p>
             </section>
 
             <!-- Date Section -->
             <section class="section date-section">
                 <p class="section-title">Save the Date</p>
-                <p class="wedding-date">Saturday, December 20, 2025</p>
-                <p class="wedding-day">Muhurat: 11:00 AM</p>
+                <p class="wedding-date">Thursday, June 25, 2026</p>
+                <p class="wedding-day">Muhuratam: 7.15 to 8.45</p>
             </section>
 
             <!-- Countdown Section -->
@@ -798,12 +835,11 @@
                         <div class="location-icon">&#127963;</div>
                         <span class="location-type">Wedding Ceremony</span>
                     </div>
-                    <p class="location-name">Shree Lakshmi Narayan Temple</p>
+                    <p class="location-name">Mavadi Sri Kanthaswamy Temple</p>
                     <p class="location-address">
-                        123 Temple Street, Spiritual Colony<br>
-                        New Delhi, India - 110001
+                        Mavadi, Sri Lanka<br>
                     </p>
-                    <a href="https://maps.google.com/?q=Shree+Lakshmi+Narayan+Temple+Delhi" target="_blank" class="view-location-btn">
+                    <a href="https://maps.app.goo.gl/zgzpqhNx6uHVPrWS9" target="_blank" class="view-location-btn">
                         <span>&#128205;</span> View Location
                     </a>
                 </div>
@@ -813,14 +849,98 @@
                         <div class="location-icon">&#127860;</div>
                         <span class="location-type">Wedding Lunch</span>
                     </div>
-                    <p class="location-name">Grand Celebration Hall</p>
+                    <p class="location-name">Karaitivu Cultural Hall</p>
                     <p class="location-address">
-                        456 Celebration Road, Banquet District<br>
-                        New Delhi, India - 110002
+                        Karaitivu, Sri Lanka<br>
                     </p>
-                    <a href="https://maps.google.com/?q=Grand+Celebration+Hall+Delhi" target="_blank" class="view-location-btn">
+                    <a href="https://maps.app.goo.gl/JoKrKkVw7trurfVo8" target="_blank" class="view-location-btn">
                         <span>&#128205;</span> View Location
                     </a>
+                </div>
+            </section>
+
+            <!-- Bride & Groom Locations with Map -->
+            <section class="section location-section">
+                <p class="section-title">Bride & Groom Locations</p>
+                
+                <!-- Map Visualization -->
+                <div class="map-container">
+                    <svg class="location-map" viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Left dotted line from bride pin curving up-right -->
+                        <path d="M60,100 C100,100 150,85 200,40" 
+                              fill="none" 
+                              stroke="#6B1A2F" 
+                              stroke-width="2.5" 
+                              stroke-dasharray="6,4" 
+                              opacity="0.9"/>
+                        
+                        <!-- Right dotted line from groom pin curving up-left -->
+                        <path d="M340,100 C300,100 250,85 200,40" 
+                              fill="none" 
+                              stroke="#6B1A2F" 
+                              stroke-width="2.5" 
+                              stroke-dasharray="6,4" 
+                              opacity="0.9"/>
+                        
+                        <!-- Heart shape formed by crossing lines at center -->
+                        <path d="M200,40 C185,25 165,30 165,50 C165,70 200,90 200,90 C200,90 235,70 235,50 C235,30 215,25 200,40" 
+                              fill="none" 
+                              stroke="#6B1A2F" 
+                              stroke-width="2.5" 
+                              stroke-dasharray="6,4" 
+                              opacity="0.9"/>
+                        
+                        <!-- Bride location pin (left) -->
+                        <g transform="translate(60, 100)">
+                            <ellipse cx="0" cy="-4" rx="9" ry="4" fill="#6B1A2F" opacity="0.2"/>
+                            <path d="M0,-20 C-10,-20 -18,-13 -18,-2 C-18,12 0,30 0,30 C0,30 18,12 18,-2 C18,-13 10,-20 0,-20 Z M0,-9 C-5,-9 -9,-5 -9,-2 C-9,1 -5,5 0,5 C5,5 9,1 9,-2 C9,-5 5,-9 0,-9 Z" 
+                                  fill="#6B1A2F"/>
+                            <circle cx="0" cy="-2" r="3" fill="#fff"/>
+                            <text y="40" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="12" font-weight="600" fill="#6B1A2F">Bride</text>
+                            <text y="55" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="10" fill="#8B2D42">Karaitivu</text>
+                        </g>
+                        
+                        <!-- Groom location pin (right) -->
+                        <g transform="translate(340, 100)">
+                            <ellipse cx="0" cy="-4" rx="9" ry="4" fill="#6B1A2F" opacity="0.2"/>
+                            <path d="M0,-20 C-10,-20 -18,-13 -18,-2 C-18,12 0,30 0,30 C0,30 18,12 18,-2 C18,-13 10,-20 0,-20 Z M0,-9 C-5,-9 -9,-5 -9,-2 C-9,1 -5,5 0,5 C5,5 9,1 9,-2 C9,-5 5,-9 0,-9 Z" 
+                                  fill="#6B1A2F"/>
+                            <circle cx="0" cy="-2" r="3" fill="#fff"/>
+                            <text y="40" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="12" font-weight="600" fill="#6B1A2F">Groom</text>
+                            <text y="55" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="10" fill="#8B2D42">Thambiluvil</text>
+                        </g>
+                    </svg>
+                </div>
+                
+                <!-- Location Details -->
+                <div class="location-grid">
+                    <div class="location-item">
+                        <div class="location-header">
+                            <div class="location-icon">&#127968;</div>
+                            <span class="location-type">Bride's House</span>
+                        </div>
+                        <p class="location-name">Bride's Residence</p>
+                        <p class="location-address">
+                            Karaitivu, Sri Lanka<br>
+                        </p>
+                        <a href="https://maps.app.goo.gl/SUGBe5AzWHUCUpKA8" target="_blank" class="view-location-btn">
+                            <span>&#128205;</span> View Location
+                        </a>
+                    </div>
+                    
+                    <div class="location-item">
+                        <div class="location-header">
+                            <div class="location-icon">&#127968;</div>
+                            <span class="location-type">Groom's House</span>
+                        </div>
+                        <p class="location-name">Groom's Residence</p>
+                        <p class="location-address">
+                            Thambiluvil, Sri Lanka<br>
+                        </p>
+                        <a href="https://maps.app.goo.gl/QFRWccjiMTTP2W5h7" target="_blank" class="view-location-btn">
+                            <span>&#128205;</span> View Location
+                        </a>
+                    </div>
                 </div>
             </section>
 
@@ -845,8 +965,8 @@
         const minutesEl = document.getElementById('minutes');
         const secondsEl = document.getElementById('seconds');
 
-        // Wedding Date - December 20, 2025 at 11:00 AM
-        const weddingDate = new Date('2025-12-20T11:00:00').getTime();
+        // Wedding Date - June 25, 2026 at 11:00 AM
+        const weddingDate = new Date('2026-06-25T11:00:00').getTime();
 
         // Open invitation function
         function openInvitation() {
