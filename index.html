@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <link rel="icon" type="image/png" href="image.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -58,7 +61,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: 
+            background-image:
                 radial-gradient(circle at 20% 80%, rgba(201, 168, 108, 0.1) 0%, transparent 50%),
                 radial-gradient(circle at 80% 20%, rgba(201, 168, 108, 0.1) 0%, transparent 50%),
                 radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.03) 0%, transparent 30%);
@@ -84,7 +87,7 @@
             max-width: 420px;
             background: linear-gradient(145deg, var(--white) 0%, var(--off-white) 100%);
             border-radius: 12px;
-            box-shadow: 
+            box-shadow:
                 0 25px 80px rgba(0, 0, 0, 0.4),
                 0 0 0 1px rgba(201, 168, 108, 0.3),
                 inset 0 0 60px rgba(201, 168, 108, 0.1);
@@ -136,10 +139,33 @@
             border: 2px solid var(--gold);
         }
 
-        .corner-tl { top: 25px; left: 25px; border-right: none; border-bottom: none; }
-        .corner-tr { top: 25px; right: 25px; border-left: none; border-bottom: none; }
-        .corner-bl { bottom: 25px; left: 25px; border-right: none; border-top: none; }
-        .corner-br { bottom: 25px; right: 25px; border-left: none; border-top: none; }
+        .corner-tl {
+            top: 25px;
+            left: 25px;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .corner-tr {
+            top: 25px;
+            right: 25px;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        .corner-bl {
+            bottom: 25px;
+            left: 25px;
+            border-right: none;
+            border-top: none;
+        }
+
+        .corner-br {
+            bottom: 25px;
+            right: 25px;
+            border-left: none;
+            border-top: none;
+        }
 
         /* Floral Pattern Top */
         .floral-top {
@@ -215,7 +241,7 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            box-shadow: 
+            box-shadow:
                 0 8px 30px rgba(107, 26, 47, 0.4),
                 inset 0 2px 4px rgba(255, 255, 255, 0.2),
                 0 0 0 4px var(--white),
@@ -226,7 +252,7 @@
 
         .seal:hover {
             transform: scale(1.05);
-            box-shadow: 
+            box-shadow:
                 0 12px 40px rgba(107, 26, 47, 0.5),
                 inset 0 2px 4px rgba(255, 255, 255, 0.2),
                 0 0 0 4px var(--white),
@@ -282,8 +308,15 @@
         }
 
         @keyframes pulse {
-            0%, 100% { opacity: 0.6; }
-            50% { opacity: 1; }
+
+            0%,
+            100% {
+                opacity: 0.6;
+            }
+
+            50% {
+                opacity: 1;
+            }
         }
 
         /* Inside Invitation */
@@ -360,10 +393,21 @@
             transform: translateY(0);
         }
 
-        .inside-invitation.open .section:nth-child(1) { transition-delay: 0.2s; }
-        .inside-invitation.open .section:nth-child(2) { transition-delay: 0.35s; }
-        .inside-invitation.open .section:nth-child(3) { transition-delay: 0.5s; }
-        .inside-invitation.open .section:nth-child(4) { transition-delay: 0.65s; }
+        .inside-invitation.open .section:nth-child(1) {
+            transition-delay: 0.2s;
+        }
+
+        .inside-invitation.open .section:nth-child(2) {
+            transition-delay: 0.35s;
+        }
+
+        .inside-invitation.open .section:nth-child(3) {
+            transition-delay: 0.5s;
+        }
+
+        .inside-invitation.open .section:nth-child(4) {
+            transition-delay: 0.65s;
+        }
 
         .section-title {
             font-family: 'Cormorant Garamond', serif;
@@ -394,7 +438,8 @@
             gap: 10px;
         }
 
-        .bride-name, .groom-name {
+        .bride-name,
+        .groom-name {
             font-family: 'Great Vibes', cursive;
             font-size: 2.2rem;
             color: var(--maroon-dark);
@@ -679,7 +724,8 @@
                 padding: 30px 20px;
             }
 
-            .bride-name, .groom-name {
+            .bride-name,
+            .groom-name {
                 font-size: 1.8rem;
             }
 
@@ -721,9 +767,17 @@
 
         /* Animation for seal click */
         @keyframes sealPress {
-            0% { transform: scale(1); }
-            50% { transform: scale(0.9); }
-            100% { transform: scale(1); }
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(0.9);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
 
         .seal.pressing {
@@ -731,6 +785,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="bg-pattern"></div>
 
@@ -745,11 +800,12 @@
 
             <!-- Floral Decoration Top -->
             <svg class="floral-top" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
-                <path class="floral-decoration" d="M100 30 C 80 10, 60 5, 40 15 C 20 25, 10 40, 0 30 M 100 30 C 120 10, 140 5, 160 15 C 180 25, 190 40, 200 30" />
+                <path class="floral-decoration"
+                    d="M100 30 C 80 10, 60 5, 40 15 C 20 25, 10 40, 0 30 M 100 30 C 120 10, 140 5, 160 15 C 180 25, 190 40, 200 30" />
                 <path class="floral-decoration" d="M100 30 C 90 45, 85 55, 100 60 C 115 55, 110 45, 100 30" />
-                <circle cx="100" cy="30" r="4" fill="#C9A86C" opacity="0.6"/>
-                <circle cx="40" cy="15" r="3" fill="#C9A86C" opacity="0.4"/>
-                <circle cx="160" cy="15" r="3" fill="#C9A86C" opacity="0.4"/>
+                <circle cx="100" cy="30" r="4" fill="#C9A86C" opacity="0.6" />
+                <circle cx="40" cy="15" r="3" fill="#C9A86C" opacity="0.4" />
+                <circle cx="160" cy="15" r="3" fill="#C9A86C" opacity="0.4" />
             </svg>
 
             <h1 class="wedding-title">Wedding</h1>
@@ -776,15 +832,17 @@
     <div class="inside-invitation" id="insideInvitation">
         <button class="close-btn" id="closeBtn" aria-label="Close invitation">
             <svg viewBox="0 0 24 24" fill="none">
-                <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
         </button>
 
         <div class="inside-content">
             <header class="inside-header">
                 <svg class="header-floral" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
-                    <path class="floral-decoration" d="M60 20 C 45 5, 30 2, 15 10 C 5 17, 0 28, 0 20 M 60 20 C 75 5, 90 2, 105 10 C 115 17, 120 28, 120 20" stroke="#6B1A2F"/>
-                    <circle cx="60" cy="20" r="3" fill="#C9A86C"/>
+                    <path class="floral-decoration"
+                        d="M60 20 C 45 5, 30 2, 15 10 C 5 17, 0 28, 0 20 M 60 20 C 75 5, 90 2, 105 10 C 115 17, 120 28, 120 20"
+                        stroke="#6B1A2F" />
+                    <circle cx="60" cy="20" r="3" fill="#C9A86C" />
                 </svg>
                 <h2 class="inside-title">You're Invited</h2>
                 <p class="inside-subtitle">to the wedding of</p>
@@ -843,7 +901,7 @@
             <!-- Location Section -->
             <section class="section location-section">
                 <p class="section-title">Venue Details</p>
-                
+
                 <div class="location-item">
                     <div class="location-header">
                         <div class="location-icon">&#127963;</div>
@@ -876,56 +934,51 @@
             <!-- Bride & Groom Locations with Map -->
             <section class="section location-section">
                 <p class="section-title">Bride & Groom Locations</p>
-                
+
                 <!-- Map Visualization -->
                 <div class="map-container">
                     <svg class="location-map" viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg">
                         <!-- Left dotted line from bride pin curving up-right -->
-                        <path d="M60,100 C100,100 150,85 200,40" 
-                              fill="none" 
-                              stroke="#6B1A2F" 
-                              stroke-width="2.5" 
-                              stroke-dasharray="6,4" 
-                              opacity="0.9"/>
-                        
+                        <path d="M60,100 C100,100 150,85 200,40" fill="none" stroke="#6B1A2F" stroke-width="2.5"
+                            stroke-dasharray="6,4" opacity="0.9" />
+
                         <!-- Right dotted line from groom pin curving up-left -->
-                        <path d="M340,100 C300,100 250,85 200,40" 
-                              fill="none" 
-                              stroke="#6B1A2F" 
-                              stroke-width="2.5" 
-                              stroke-dasharray="6,4" 
-                              opacity="0.9"/>
-                        
+                        <path d="M340,100 C300,100 250,85 200,40" fill="none" stroke="#6B1A2F" stroke-width="2.5"
+                            stroke-dasharray="6,4" opacity="0.9" />
+
                         <!-- Heart shape formed by crossing lines at center -->
-                        <path d="M200,40 C185,25 165,30 165,50 C165,70 200,90 200,90 C200,90 235,70 235,50 C235,30 215,25 200,40" 
-                              fill="none" 
-                              stroke="#6B1A2F" 
-                              stroke-width="2.5" 
-                              stroke-dasharray="6,4" 
-                              opacity="0.9"/>
-                        
+                        <path
+                            d="M200,40 C185,25 165,30 165,50 C165,70 200,90 200,90 C200,90 235,70 235,50 C235,30 215,25 200,40"
+                            fill="none" stroke="#6B1A2F" stroke-width="2.5" stroke-dasharray="6,4" opacity="0.9" />
+
                         <!-- Bride location pin (left) -->
                         <g transform="translate(60, 100)">
-                            <ellipse cx="0" cy="-4" rx="9" ry="4" fill="#6B1A2F" opacity="0.2"/>
-                            <path d="M0,-20 C-10,-20 -18,-13 -18,-2 C-18,12 0,30 0,30 C0,30 18,12 18,-2 C18,-13 10,-20 0,-20 Z M0,-9 C-5,-9 -9,-5 -9,-2 C-9,1 -5,5 0,5 C5,5 9,1 9,-2 C9,-5 5,-9 0,-9 Z" 
-                                  fill="#6B1A2F"/>
-                            <circle cx="0" cy="-2" r="3" fill="#fff"/>
-                            <text y="40" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="12" font-weight="600" fill="#6B1A2F">Bride</text>
-                            <text y="55" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="10" fill="#8B2D42">Karaitivu</text>
+                            <ellipse cx="0" cy="-4" rx="9" ry="4" fill="#6B1A2F" opacity="0.2" />
+                            <path
+                                d="M0,-20 C-10,-20 -18,-13 -18,-2 C-18,12 0,30 0,30 C0,30 18,12 18,-2 C18,-13 10,-20 0,-20 Z M0,-9 C-5,-9 -9,-5 -9,-2 C-9,1 -5,5 0,5 C5,5 9,1 9,-2 C9,-5 5,-9 0,-9 Z"
+                                fill="#6B1A2F" />
+                            <circle cx="0" cy="-2" r="3" fill="#fff" />
+                            <text y="40" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="12"
+                                font-weight="600" fill="#6B1A2F">Bride</text>
+                            <text y="55" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="10"
+                                fill="#8B2D42">Karaitivu</text>
                         </g>
-                        
+
                         <!-- Groom location pin (right) -->
                         <g transform="translate(340, 100)">
-                            <ellipse cx="0" cy="-4" rx="9" ry="4" fill="#6B1A2F" opacity="0.2"/>
-                            <path d="M0,-20 C-10,-20 -18,-13 -18,-2 C-18,12 0,30 0,30 C0,30 18,12 18,-2 C18,-13 10,-20 0,-20 Z M0,-9 C-5,-9 -9,-5 -9,-2 C-9,1 -5,5 0,5 C5,5 9,1 9,-2 C9,-5 5,-9 0,-9 Z" 
-                                  fill="#6B1A2F"/>
-                            <circle cx="0" cy="-2" r="3" fill="#fff"/>
-                            <text y="40" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="12" font-weight="600" fill="#6B1A2F">Groom</text>
-                            <text y="55" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="10" fill="#8B2D42">Thambiluvil</text>
+                            <ellipse cx="0" cy="-4" rx="9" ry="4" fill="#6B1A2F" opacity="0.2" />
+                            <path
+                                d="M0,-20 C-10,-20 -18,-13 -18,-2 C-18,12 0,30 0,30 C0,30 18,12 18,-2 C18,-13 10,-20 0,-20 Z M0,-9 C-5,-9 -9,-5 -9,-2 C-9,1 -5,5 0,5 C5,5 9,1 9,-2 C9,-5 5,-9 0,-9 Z"
+                                fill="#6B1A2F" />
+                            <circle cx="0" cy="-2" r="3" fill="#fff" />
+                            <text y="40" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="12"
+                                font-weight="600" fill="#6B1A2F">Groom</text>
+                            <text y="55" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="10"
+                                fill="#8B2D42">Thambiluvil</text>
                         </g>
                     </svg>
                 </div>
-                
+
                 <!-- Location Details -->
                 <div class="location-grid">
                     <div class="location-item">
@@ -941,7 +994,7 @@
                             <span>&#128205;</span> View Location
                         </a>
                     </div>
-                    
+
                     <div class="location-item">
                         <div class="location-header">
                             <div class="location-icon">&#127968;</div>
@@ -961,9 +1014,17 @@
             <footer class="footer">
                 <p class="footer-text">We look forward to celebrating with you!</p>
                 <svg class="footer-floral" viewBox="0 0 80 30" xmlns="http://www.w3.org/2000/svg">
-                    <path class="floral-decoration" d="M40 15 C 30 5, 20 2, 10 8 C 3 13, 0 21, 0 15 M 40 15 C 50 5, 60 2, 70 8 C 77 13, 80 21, 80 15" stroke="#6B1A2F"/>
-                    <circle cx="40" cy="15" r="2" fill="#C9A86C"/>
+                    <path class="floral-decoration"
+                        d="M40 15 C 30 5, 20 2, 10 8 C 3 13, 0 21, 0 15 M 40 15 C 50 5, 60 2, 70 8 C 77 13, 80 21, 80 15"
+                        stroke="#6B1A2F" />
+                    <circle cx="40" cy="15" r="2" fill="#C9A86C" />
                 </svg>
+                <div class="video-container" style="width: 100%; margin-top: 20px;">
+                    <video src="ct.mp4" controls
+                        style="width: 100%; border-radius: 12px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </footer>
         </div>
     </div>
@@ -985,7 +1046,7 @@
         // Open invitation function
         function openInvitation() {
             openSeal.classList.add('pressing');
-            
+
             setTimeout(() => {
                 coverPage.classList.add('hidden');
                 insideInvitation.classList.add('open');
@@ -1061,5 +1122,9 @@
             lastTouchEnd = now;
         }, { passive: false });
     </script>
+
+
+
 </body>
+
 </html>
